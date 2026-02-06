@@ -1010,6 +1010,34 @@ get_asset_name() {
                     echo "linux-amd64"
                     return 0
                     ;;
+                arm64|aarch64)
+                    echo "linux-arm64"
+                    return 0
+                    ;;
+                armv7l|armhf)
+                    echo "linux-armv7"
+                    return 0
+                    ;;
+                riscv64)
+                    echo "linux-riscv64"
+                    return 0
+                    ;;
+                mips64)
+                    echo "linux-mips64"
+                    return 0
+                    ;;
+                mips64el)
+                    echo "linux-mips64le"
+                    return 0
+                    ;;
+                mips)
+                    echo "linux-mips"
+                    return 0
+                    ;;
+                mipsel)
+                    echo "linux-mipsle"
+                    return 0
+                    ;;
                 *)
                     return 1
                     ;;

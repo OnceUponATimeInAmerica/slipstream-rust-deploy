@@ -46,7 +46,7 @@ This command will:
 3. Start the interactive setup process
 4. Configure your slipstream-rust server automatically
 
-**Note**: For supported platforms (Linux x86_64, Linux ARM64, macOS ARM64, macOS Intel), prebuilt binaries are used for faster installation. For other architectures, the script will build from source which may take 10-30 minutes.
+**Note**: For supported platforms (Linux x86_64, ARM64, ARMv7, RISC-V 64, MIPS64, MIPS64LE, MIPS, MIPSLE, macOS ARM64, macOS Intel), prebuilt binaries are used for faster installation. For other architectures, the script will build from source which may take 10-30 minutes.
 
 ## Client Usage
 
@@ -135,6 +135,12 @@ Prebuilt client binaries are available for the following platforms:
 |----------|----------|
 | Linux (x86_64) | [slipstream-client-linux-amd64](https://github.com/AliRezaBeigy/slipstream-rust-deploy/releases/latest/download/slipstream-client-linux-amd64) |
 | Linux (ARM64) | [slipstream-client-linux-arm64](https://github.com/AliRezaBeigy/slipstream-rust-deploy/releases/latest/download/slipstream-client-linux-arm64) |
+| Linux (ARMv7) | [slipstream-client-linux-armv7](https://github.com/AliRezaBeigy/slipstream-rust-deploy/releases/latest/download/slipstream-client-linux-armv7) |
+| Linux (RISC-V 64) | [slipstream-client-linux-riscv64](https://github.com/AliRezaBeigy/slipstream-rust-deploy/releases/latest/download/slipstream-client-linux-riscv64) |
+| Linux (MIPS64) | [slipstream-client-linux-mips64](https://github.com/AliRezaBeigy/slipstream-rust-deploy/releases/latest/download/slipstream-client-linux-mips64) |
+| Linux (MIPS64LE) | [slipstream-client-linux-mips64le](https://github.com/AliRezaBeigy/slipstream-rust-deploy/releases/latest/download/slipstream-client-linux-mips64le) |
+| Linux (MIPS) | [slipstream-client-linux-mips](https://github.com/AliRezaBeigy/slipstream-rust-deploy/releases/latest/download/slipstream-client-linux-mips) |
+| Linux (MIPSLE) | [slipstream-client-linux-mipsle](https://github.com/AliRezaBeigy/slipstream-rust-deploy/releases/latest/download/slipstream-client-linux-mipsle) |
 | Windows (x86_64) | [slipstream-client-windows-amd64.exe](https://github.com/AliRezaBeigy/slipstream-rust-deploy/releases/latest/download/slipstream-client-windows-amd64.exe) |
 | macOS (ARM64) | [slipstream-client-darwin-arm64](https://github.com/AliRezaBeigy/slipstream-rust-deploy/releases/latest/download/slipstream-client-darwin-arm64) |
 | macOS (Intel) | [slipstream-client-darwin-amd64](https://github.com/AliRezaBeigy/slipstream-rust-deploy/releases/latest/download/slipstream-client-darwin-amd64) |
@@ -475,7 +481,7 @@ sudo systemctl restart slipstream-rust-server
 ## Features
 
 - **Multi-distribution support**: Fedora, Rocky Linux, CentOS, Debian, Ubuntu
-- **Prebuilt binaries**: Automatically downloads prebuilt binaries for supported platforms (Linux x86_64, Linux ARM64, macOS ARM64, macOS Intel)
+- **Prebuilt binaries**: Automatically downloads prebuilt binaries for supported platforms (Linux x86_64, ARM64, ARMv7, RISC-V 64, MIPS64, MIPS64LE, MIPS, MIPSLE, macOS ARM64, macOS Intel)
 - **Fallback to source build**: Automatically builds from source when prebuilt binaries aren't available
 - **Interactive management menu**: Easy-to-use interface for all operations
 - **Self-updating capability**: Built-in update mechanism for the script
